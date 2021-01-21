@@ -1,8 +1,40 @@
-const ongoose = require("mongoose");
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-//add schema see activity 10
+//workout schema
+const workout = new Schema ({
+    name: {
+        type: String,
+        trim: true,
+        required: "Enter a workout name."
+    },
+    type: {
+        type: String,
+        trim: true,
+        required: "Enter a workout type."
+    },
+    weight: {
+        type: Number,
+        trim: true,
+        required: "Enter a weight."
+    },
+    sets: {
+        type: Number,
+        trim: true,
+        required: "Enter the number of sets."
+    },
+    reps: {
+        type: Number,
+        trim: true,
+        required: "Enter the number of reps."
+    },
+    duration: {
+        type: Number,
+        trim: true,
+        required: "Enter the duration of the workout."
+    }
+})
 
 //create variable for schema
-const Example = mongoose.model("Example", ExampleSchema); // replace variable name and what is in ("modelname", schema name)
-// module.exports = //const name
+const workout = mongoose.model("workout", workout);
+module.exports = workout;
