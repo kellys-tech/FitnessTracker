@@ -5,4 +5,4 @@ const Schema = mongoose.Schema;
 
 //create variable for schema
 const Example = mongoose.model("Example", ExampleSchema); // replace variable name and what is in ("modelname", schema name)
-module.exports = //const name
+// module.exports = //const name
