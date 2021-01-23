@@ -14,7 +14,8 @@ app.use(express.static("public"));
 //create and name database ("fitness")
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
-  usefindAndModify: false
+  usefindAndModify: false,
+  useUnifiedTopology: true
 });
 
 //routes
