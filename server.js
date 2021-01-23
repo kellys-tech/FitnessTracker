@@ -3,7 +3,6 @@ const express = require("express");
 const routes = require("./routes");
 
 const PORT = process.env.PORT || 3001;
-
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
@@ -11,10 +10,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-//create and name database ("fitness")
+//create and name database ("workout")
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
-  usefindAndModify: false,
+  useFindAndModify: false,
   useUnifiedTopology: true
 });
 

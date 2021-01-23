@@ -93,14 +93,14 @@ router.put("/workouts/:id", (req, res) => {
                 res.json(workout);
             })
             .catch(err => {
-                res.statuys(400).json(err);
+                res.status(400).json(err);
             });
     }
 });
 
 //get total duration of workout, sort in ascending order
 router.get("/workout/range", (req, res)=> {
-    workout.aggregate([{
+    Workout.aggregate([{
         $addFields: {
             totalDuration: {$sum: "$exercises.duration"}
         }
