@@ -41,7 +41,7 @@ const workoutSchema = new Schema({
         type: Date,
         default: Date.now
     },
-})
+});
 
 //create variable for schema
 const Workout = mongoose.model("workout", workoutSchema);
