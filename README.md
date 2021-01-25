@@ -40,10 +40,6 @@ If you would like to contribute please contact me directly by submitting an issu
 If you have any questions you can contact me through my github repo, listed at the top of the page or by emailing me at kellysmith.r77@gmail.com
 
 ## Screenshots
-![ViewDepartments](/assets/ViewDepartments.png)
-![ViewRole](/assets/ViewRole.png)
-![ViewEmployee](/assets/ViewEmployee.png)
-![AddDepartment](/assets/NewDepartment.png)
-![AddRole](/assets/NewRole.png)
-![AddEmployee](/assets/NewEmployee.png)
-![UpdateEmployeeRole](/assets/UupdateEmployeeRole.png)
+![Workout](/public/images/Workout.png)
+![NewExerciseResistance](/public/images/NewExerciseResistance.png)
+![NewExerciseCardo](/public/images/NewExerciseCardio.png)
