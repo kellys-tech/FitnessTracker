@@ -2,7 +2,7 @@ const { json } = require("express");
 
 let db;
 //create new db request
-const request = indexedDB.open("fitness", 1);
+const request = indexedDB.open("Workout", 1);
 
 request.onupgradeneeded = function (event) {
     //create object store called "pending" and autoIncrement
@@ -64,6 +64,6 @@ function checkDatabase() {
     };
 }
 
-//listen or app coming back online
+//listen for app coming back online
 window.addEventListener("online", checkDatabase);
 
